@@ -2,10 +2,10 @@ spring:
   cloud:
     config:
       name: configclient
-      label: master
       discovery:
         enabled: true
         service-id: configserver
+      label: configserver
 eureka:
   client:
     service-url:
